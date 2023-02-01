@@ -13,7 +13,7 @@
 <body>
 
     <!-- NavBar Here -->
-    <nav class=""ct-nav>
+    <nav class="ct-nav">
         <div>
             <img src="../static/images/Corvette-Pace-Car-Collection-1600x900.webp" alt = "Car Inventory">
         </div>
@@ -21,7 +21,7 @@
         <!--Nav Items -->
         <div>
             <ul id="horizontal-list">
-                <a href="">
+                <a href="{{ url_for('site.home') }}">
                     <li>Car Inventory Project</li>
                 </a>
                 <a href="">
@@ -30,10 +30,10 @@
                 <a href="">
                     <li>Profile</li>
                 </a>
-                <a href="">
+                <a href="{{ url_for('auth.signup') }}">
                     <li>Sign Up</li>
                 </a>
-                <a href="">
+                <a href="{{ url_for('auth.signin') }}">
                     <li>Sign In</li>
                 </a>
                 <a href="">
